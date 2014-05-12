@@ -1,4 +1,12 @@
-from setuptools import setup, find_packages
+# -*- coding: utf-8 -*-
+
+"""
+Created on 2014-05-12
+:author: Andreas Kaiser (disko)
+"""
+
+from setuptools import find_packages
+from setuptools import setup
 import os
 
 # The version of the wrapped library is the starting point for the
@@ -10,37 +18,41 @@ import os
 
 version = '0.9.12dev'
 
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 long_description = (
     read('README.txt')
     + '\n' +
-    read('js', 'jquery-sortable', 'test_jquery_sortable.txt')
+    read('js', 'jquery_sortable', 'test_jquery_sortable.txt')
     + '\n' +
     read('CHANGES.txt'))
 
 setup(
-    name='js.jquery-sortable',
+    name='js.jquery_sortable',
     version=version,
     description="Fanstatic packaging of jQuery Sortable",
     long_description=long_description,
     classifiers=[],
     keywords='',
-    author='Fanstatic Developers',
-    author_email='fanstatic@googlegroups.com',
+    author='Andreas Kaiser',
+    author_email='disko@binary-punks.com',
+    url='https://github.com/disko/js.jquery_sortable',
     license='BSD',
-    packages=find_packages(),namespace_packages=['js'],
+    packages=find_packages(),
+    namespace_packages=['js'],
     include_package_data=True,
     zip_safe=False,
-    setup_requires=['hgtools'],
+    setup_requires=[],
     install_requires=[
         'fanstatic',
+        'js.jquery',
         'setuptools',
-        ],
+    ],
     entry_points={
         'fanstatic.libraries': [
-            'jquery_sortable = js.jquery-sortable:library',
-            ],
-        },
-    )
+            'jquery_sortable = js.jquery_sortable:library',
+        ],
+    },
+)
