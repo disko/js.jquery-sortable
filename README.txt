@@ -1,8 +1,8 @@
 js.jquery-sortable
-******************
+==================
 
 Introduction
-============
+------------
 
 This library packages `jQuery Sortable`_ for `fanstatic`_.
 
