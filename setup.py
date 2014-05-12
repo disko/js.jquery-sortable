@@ -5,9 +5,9 @@ Created on 2014-05-12
 :author: Andreas Kaiser (disko)
 """
 
+import os
 from setuptools import find_packages
 from setuptools import setup
-import os
 
 # The version of the wrapped library is the starting point for the
 # version number of the python package.
