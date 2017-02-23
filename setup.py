@@ -11,12 +11,12 @@ from setuptools import setup
 
 # The version of the wrapped library is the starting point for the
 # version number of the python package.
-# In bugfix releases of the python package, add a '-' suffix and an
+# In bugfix releases of the python package, add a '.postX' suffix with an
 # incrementing integer.
 # For example, a packaging bugfix release version 1.4.4 of the
-# js.jquery package would be version 1.4.4-1 .
+# js.jquery package would be version 1.4.4.post1 .
 
-version = '0.9.13.dev0'
+version = '0.9.13'
 
 
 def read(*rnames):
