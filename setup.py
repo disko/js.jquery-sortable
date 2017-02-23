@@ -16,7 +16,7 @@ from setuptools import setup
 # For example, a packaging bugfix release version 1.4.4 of the
 # js.jquery package would be version 1.4.4.post1 .
 
-version = '0.9.13'
+version = '0.9.14.dev0'
 
 
 def read(*rnames):
